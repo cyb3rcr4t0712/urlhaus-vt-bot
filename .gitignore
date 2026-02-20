@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+botenv/
+venv/
+.venv/
+env/
+
+# Bot state files (runtime only, not for version control)
+seen_urls.json
+queue.json
+*.json.tmp
+automation.log
+*.log
+
+# Environment / secrets
+.env
+*.env
+*.key
+*.pem
+*.ppk
+
+# SSH keys
+.ssh/
+id_rsa
+id_rsa.pub
+google_compute_engine
+google_compute_engine.pub
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
