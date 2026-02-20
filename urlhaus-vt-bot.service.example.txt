@@ -1,0 +1,21 @@
+[Unit]
+Description=URLhaus to VirusTotal Bot
+After=network-online.target
+
+[Service]
+Type=simple
+User=USERNAME
+WorkingDirectory=/home/USERNAME
+
+Environment="VT_API_KEY="
+Environment="URLHAUS_AUTH_KEY="
+
+Environment="TELEGRAM_BOT_TOKEN=123456:ABCdefGHIjklMNOpqrSTUvwxYZ"
+Environment="TELEGRAM_CHAT_ID=123456789"
+
+ExecStart=/home/USERNAME/botenv/bin/python /home/USERNAME/urlhaus_vt_bot.py
+Restart=always
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
